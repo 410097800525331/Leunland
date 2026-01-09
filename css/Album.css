@@ -1,5 +1,10 @@
 @charset 'utf-8';
 
+.heart_btn {
+  position: fixed;
+  left: 10px; top: 30px;
+  z-index: 9999;
+}
 /* scroll common */
 .main {
   flex: 1;
@@ -11,29 +16,23 @@
 .horizontal_wrap {
   display: flex;
   height: 100%;
-  /* padding-left: 20px; */
 }
 .page {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex-shrink: 0;
   flex: 0 0 100%;
   height: 100%;
 }
 
 /* PAGE1 */
-.page1 {
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 40px;
-}
 .album_container {
+  width: 20%;
   flex-direction: column;
+  padding-left: 30px;
 }
 .album_stage {
   perspective: 2000px;
-  margin: 30px 0;
+  margin: 45px 0;
 }
 .album_book {
   position: relative;
@@ -104,48 +103,14 @@
 .album_book.open .album_cover {
   transform: rotateY(-150deg);
 }
-/* BTN */
-.arrow_btn {
-  font-size: 2.8rem;
-  color: #444;
-  cursor: pointer;
-  animation: arrow_move 1.6s infinite ease-in-out;
-}
-@keyframes arrow_move {
-  0% {
-    transform: translateX(0);
-    opacity: 0.5;
-  }
-  50% {
-    transform: translateX(12px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 0.5;
-  }
-}
 
-/* PAGE2 */
-.page2,
-.page3 {
-  width: 100%;
-  height: 90%;
-  background: #f3f3f3;
-  padding: 20px 0;
-}
+/*  */
 .scroll_container {
-  display: inline-block;
-  width: 100vw;
+  width: 80%;
   height: 100%;
-  padding: 0 50px;
-  
+  padding: 50px 50px;
 }
 .inner_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   background: #fff;
@@ -153,7 +118,6 @@
   text-align: center;
   border-radius: 5px;
 }
-
 .memorabilia {
   position: relative;
   width: 100%;
@@ -172,7 +136,7 @@
   transform: rotate(-5deg);
 }
 .string_2 {
-  top: 460px;
+  top: 500px;
   left: 0;
   width: 100%;
   transform: rotate(2deg);
@@ -199,7 +163,6 @@
 .photo img {
   width: 180px;
   height: 180px;
-  /* display: block; */
   background: #ccc;
 }
 .p1 {
@@ -214,12 +177,12 @@
 }
 .p3 {
   top: 70px;
-  right: 560px;
+  right: 420px;
   transform: rotate(2deg);
 }
 .p4 {
-  top: 30px;
-  right: 200px;
+  top: 40px;
+  right: 100px;
   transform: rotate(6deg);
 }
 .p5 {
@@ -229,22 +192,45 @@
 }
 .p6 {
   bottom: 90px;
-  left: 520px;
+  left: 500px;
   transform: rotate(5deg);
 }
 .p7 {
   bottom: 80px;
-  right: 520px;
+  right: 420px;
   transform: rotate(-4deg);
 }
 .p8 {
   bottom: 70px;
-  right: 160px;
+  right: 120px;
   transform: rotate(-3deg);
 }
 
-/* PAGE3 */
+/* BTN */
+.arrow_btn {
+  position: absolute;
+  right: 60px; bottom: 50%;
+  font-size: 2.8rem;
+  color: #444;
+  cursor: pointer;
+  animation: arrow_move 1.6s infinite ease-in-out;
+}
+@keyframes arrow_move {
+  0% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(12px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+}
 
-/* PAGE4 */
-
-
+/* PAGE2 */
+.page2 .scroll_container {
+  width: 100%; height: 100vh;
+}

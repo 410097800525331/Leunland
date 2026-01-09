@@ -11,71 +11,66 @@
 </head>
 
 <body>
-  <section class="layout">
-    <!-- Left Sidebar -->
-    <div class="left_sidebar"></div>
-    <!-- Main -->
-    <main class="main">
-      <!-- <div class="top"></div> -->
-      <div class="horizontal_wrap">
-        <!-- PAGE1 -->
-        <section class="page page1">
-          <!-- <h1>My Album</h1> -->
-          <div class="album_container">
-            <!-- 로운 -->
-            <div class="album_stage">
-              <div class="album_book">
-                <div class="album_cover">
-                  <p>ROWOON<br>ALBUM</p>
-                </div>
-
-                <div class="album_inside">
-                  <div class="photo_grid">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                  </div>
-                </div>
+  <a href="/main/Home.html" class="heart_btn">
+    <h3 class="heart_text">Go back :)</h3>
+  </a>
+  <main class="main">
+    <div class="horizontal_wrap">
+      <!-- PAGE1 -->
+      <section class="page page1">
+        <div class="album_container">
+          <!-- 로운 -->
+          <div class="album_stage">
+            <div class="album_book">
+              <div class="album_cover">
+                <p>ROWOON<br>ALBUM</p>
               </div>
-            </div>
-            <!-- 레오 -->
-            <div class="album_stage">
-              <div class="album_book">
-                <div class="album_cover">
-                  <p>LEO<br>ALBUM</p>
-                </div>
 
-                <div class="album_inside">
-                  <div class="photo_grid">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 일러 -->
-            <div class="album_stage">
-              <div class="album_book">
-                <div class="album_cover">
-                  <p>Illustrations of<br>Rowoon & Leo</p>
-                </div>
-
-                <div class="album_inside">
-                  <div class="photo_grid">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                    <img src="/" alt="Rowoon photo">
-                  </div>
+              <div class="album_inside">
+                <div class="photo_grid">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
                 </div>
               </div>
             </div>
           </div>
-          <button class="arrow_btn" title="안쪽 전시 보기">→</button>
-        </section>
+          <!-- 레오 -->
+          <div class="album_stage">
+            <div class="album_book">
+              <div class="album_cover">
+                <p>LEO<br>ALBUM</p>
+              </div>
+
+              <div class="album_inside">
+                <div class="photo_grid">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 일러 -->
+          <div class="album_stage">
+            <div class="album_book">
+              <div class="album_cover">
+                <p>Rowoon & Leo</p>
+              </div>
+
+              <div class="album_inside">
+                <div class="photo_grid">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                  <img src="/" alt="Rowoon photo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <script>
           const album = document.querySelector(".album_book");
 
@@ -83,86 +78,44 @@
             album.classList.toggle("open");
           });
         </script>
-        <!-- PAGE2 -->
-        <section class="page page2">
-          <div class="scroll_container">
-            <div class="inner_content">
-              <div class="memorabilia">
-                <div class="string string_1"></div>
-                <div class="string string_2"></div>
 
-                <div class="photo p1"><img src="/assets/img/" /></div>
-                <div class="photo p2"><img src="/assets/img/" /></div>
-                <div class="photo p3"><img src="/assets/img/" /></div>
-                <div class="photo p4"><img src="/assets/img/" /></div>
-                <div class="photo p5"><img src="/assets/img/" /></div>
-                <div class="photo p6"><img src="/assets/img/" /></div>
-                <div class="photo p7"><img src="/assets/img/" /></div>
-                <div class="photo p8"><img src="/assets/img/" /></div>
-              </div>
+        <div class="scroll_container">
+          <div class="inner_content">
+            <div class="memorabilia">
+              <div class="string string_1"></div>
+              <div class="string string_2"></div>
+
+              <div class="photo p1"><img src="/assets/img/" /></div>
+              <div class="photo p2"><img src="/assets/img/" /></div>
+              <div class="photo p3"><img src="/assets/img/" /></div>
+              <div class="photo p4"><img src="/assets/img/" /></div>
+              <div class="photo p5"><img src="/assets/img/" /></div>
+              <div class="photo p6"><img src="/assets/img/" /></div>
+              <div class="photo p7"><img src="/assets/img/" /></div>
+              <div class="photo p8"><img src="/assets/img/" /></div>
             </div>
-        </section>
-        <!-- PAGE3 -->
-        <section class="page page3">
-          <div class="scroll_container">
-            <div class="inner_content">
-              <h1>페이지 2</h1>
-              <p>여기에 두 번째 페이지의 내용이 들어갑니다.</p>
-            </div>
-        </section>
-        <!-- PAGE4 -->
-        <section class="page page4">page4</section>
-      </div>
-    </main>
-  </section>
-  
+          </div>
+          <button class="arrow_btn" title="안쪽 영상 보기">→</button>
+      </section>
+
+      <!-- PAGE2 -->
+      <section class="page page2">
+        <div class="scroll_container">
+          <div class="inner_content">
+            <h1>페이지 2</h1>
+            <p>여기에 두 번째 페이지의 내용이 들어갑니다.</p>
+          </div>
+      </section>
+      </section>
+    </div>
+  </main>
+
   <div class="cursor-circle circle-1" id="cursor-1"></div>
   <div class="cursor-circle circle-2" id="cursor-2"></div>
 
-  <!-- <script>
-    const main = document.querySelector(".main");
-
-    let currentPage = 0;
-    const pages = document.querySelectorAll(".page");
-    let isScrolling = false;
-
-    function scrollToPage(index) {
-      main.scrollTo({
-        left: index * main.clientWidth,
-        behavior: "smooth"
-      });
-    }
-
-    main.addEventListener(
-      "wheel",
-      function (e) {
-        e.preventDefault();
-        if (isScrolling) return;
-        isScrolling = true;
-
-        if (e.deltaY > 0) {
-          currentPage = Math.min(currentPage + 1, pages.length - 1);
-        } else {
-          currentPage = Math.max(currentPage - 1, 0);
-        }
-
-        scrollToPage(currentPage);
-
-        setTimeout(() => {
-          isScrolling = false;
-        }, 600);
-      },
-      { passive: false }
-    );
-
-    window.addEventListener("resize", () => {
-      scrollToPage(currentPage);
-    });
-
-  </script> -->
-  
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="/js/Album.js"></script>
+  <script src="/js/cursor.js"></script>
 </body>
 
 </html>
